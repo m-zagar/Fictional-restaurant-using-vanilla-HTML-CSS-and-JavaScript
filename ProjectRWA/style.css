@@ -1,0 +1,478 @@
+/*naredne 4 naredbe su dizajn scrollbara*/
+::-webkit-scrollbar {
+	width: 13px;
+}
+
+::-webkit-scrollbar-track {
+	background: yellow;
+	border: 1px solid blue;
+}
+
+::-webkit-scrollbar-thumb {
+	background: blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	border: 1px solid yellow;
+}
+
+/*ubacivanje fonta*/
+@font-face{
+	font-family: '8bit';
+	src: url(slkscre.ttf);
+}
+
+/*welcome i checkout div*/
+
+.cornerDiv{
+	font-size: 25px;
+	background-color: yellow;
+	border: 1px solid blue;
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+.checkout{
+	text-align: center;
+	text-decoration: none;
+}
+
+.checkout:visited{
+	color: blue;
+}
+
+/*Naslov*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.headerContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.headerContainer img{
+	max-width: 100%;
+}
+
+#headerTitle{
+	flex: 1;
+	font-family: '8bit';
+	font-size: 80px;
+	text-align: center;
+	color: yellow;
+	/*za postavljanje crnog ruba kod teksta*/
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.headerImage{
+	flex: 1;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+/*Podnožje*/
+.footer{
+	display:flex;
+	width:100%;
+	background-color:blue;
+	flex-direction: row;
+	padding: 30px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 75px;
+	margin-bottom: 0;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    bottom: 0;
+}
+
+.footerSection{
+	flex:1;
+	color:white;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.footerSection p{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#map{
+	height:200px;
+}
+
+.fa {
+	padding: 17px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 60%;
+	color:white;
+	background-color: yellow;
+  }
+
+.fa:hover{
+	background-color: white;
+	color:aqua;
+  }
+
+/*navigacijski meni*/
+.navbar{
+	border: 1px solid blue;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.navbar a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: '8bit';
+	font-size: 30px;
+	color: blue;
+	background-color: yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-decoration: none;
+}
+
+.navbar a:hover{
+	background-color:blue;
+	color: white;
+}
+
+.navbar ul{
+	/*micanje bulletsa*/
+	list-style-type: none;
+	display: flex;
+}
+
+.navbar ul li{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	border-right: 1px solid blue;
+}
+
+.dropdown-1 ul li{
+	display: none;
+	position: relative;
+}
+
+.navbar li .dropdown-1 > li{
+	top: 0;
+	display: none;
+	border: 1px solid blue;
+}
+
+.navbar li:hover .dropdown-1 > li{
+	top: 0;
+	display: block;
+}
+
+.dropdown-1{
+	position: absolute;
+	flex-direction: column;
+	width: 100%;
+}
+
+.dropdown-1 ul li:hover{
+	display: block;
+}
+
+/*homepage*/
+
+.introduction{
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: yellow;
+	color: blue;
+	border: 1px solid blue;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+.introduction p, a{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.introLinks{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.introLinks > a{
+	flex: 1;
+	border: 1px solid black;
+	font-family: '8bit';
+	font-size: 30px;
+	color: aqua;
+	background-color: blue;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-decoration: none;
+	text-align: center;
+}
+
+.introLinks > a:hover{
+	color: blue;
+	background-color: aqua;
+}
+
+.slideshow-container{
+	position: relative;
+	margin: auto;
+}
+
+.mySlides{
+	display: none;
+}
+
+.mySlides img{
+	vertical-align: middle;
+	border: 1px solid blue;
+	max-height: 150px;
+
+}
+
+/*menu*/
+.menu{
+	display: flex;
+	flex-direction: row;
+	font-family: '8bit';
+	display: row;
+	margin-top: 75px;
+	margin-left: 150px;
+	margin-right: 150px;
+	border: 1px solid blue;
+	background-color: yellow;
+	line-height: 95%;
+}
+
+.productNameAndDescription{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px dashed blue;
+	border-right: 1px dashed blue;
+}
+
+.productNameAndDescription h1, p{
+	color: blue;
+	text-align: center;
+	line-height: normal;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.productNameAndDescription p{
+	font-size: 20px;
+}
+
+.addtocart{
+	display: flex;
+	margin-top: 35px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.addtocart h1{
+	color: blue;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.addtocart button{
+  color: white;
+  background-color: blue;
+  border: 1px solid blue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: '8bit';
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+.addtocart button:hover{
+	color: blue;
+	background-color: aqua;
+	border: 1px solid blue;
+}
+
+/*login and register*/
+.logregContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height:100%;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.logregItem{
+	flex:1;
+	border: 1px solid blue;
+	align-items: center;
+	justify-content: center;
+	background-color: yellow;
+	padding: 10px;
+	height:60%;
+}
+
+.logregItem h2{
+	text-align: center;
+	color:blue;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: xx-large;
+}
+
+
+.logregItem form{
+	text-align: center;
+	color:blue;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: x-large;
+}
+
+.sub{
+	font-family: '8bit';
+	background-color: blue;
+	color:yellow;
+	font-size: x-large;
+}
+
+.sub:hover{
+	background-color: aqua;
+	color:blue;
+}
+
+#homebutton{
+	font-family: '8bit';
+	font-size: 30px;
+	color:yellow;
+	background-color: blue;
+	border: 1px solid blue;
+	margin-top:-80px;
+	margin-left:43%;
+	padding: 5px;
+}
+
+#homebutton:hover{
+	color:blue;
+	background-color: yellow;
+	border: 1px solid blue;
+}
+
+.errorDiv{
+	 font-size: 25px;
+	 background-color: yellow; 
+	 border: 1px solid blue; 
+	 margin-left: 275px; 
+	 margin-right: 275px; 
+	 margin-top: 100px;
+}
+
+/* CHECKOUT LIST */
+
+.checkoutlist{
+	border: 1px solid blue;
+	color: blue;
+	margin-left:30%; 
+	margin-top: 60px;
+	max-width: 100%;
+	width: 700px;
+}
+
+.listproducts input{
+	font-family: '8bit';
+}
+
+.orderbutton{
+	font-family: '8bit';
+	font-size: 30px;
+	color:yellow;
+	background-color: blue;
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.orderbutton:hover{
+	font-family: '8bit';
+	font-size: 30px;
+	color:blue;
+	background-color: aqua;
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+#ifCard{
+	flex:1;
+	font-size:20px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* review page */
+
+.reviewtable{
+	font-family: '8bit';
+	font-size: 20px;
+	background-color: yellow;
+	color: blue
+	margin-top: 100px;
+	margin-left: 225px;
+	border-collapse: collapse;
+	width: 75%;
+}
+
+.reviewform{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	width: 700px;
+	margin-left: 440px;
+}
+
+.reviewformelement{
+	flex:1;
+	font-size:20px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.employment{
+	display: block;
+	border: 1px solid blue;
+	background-color: yellow;
+	color: blue;
+	width:50%;
+	margin-left:420px;
+	text-align: center;
+	margin-top: 75px;
+}
