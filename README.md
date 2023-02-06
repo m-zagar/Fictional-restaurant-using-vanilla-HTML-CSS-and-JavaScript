@@ -3,6 +3,6 @@ A project for the "Development of Web Applications" class. (Undergraduate Univer
 
 The goal of the project was to create a web application that would, as closely as possible, mimic a website of a fully functional restaurant. 
 
-The idea was to have various features that real life restaurant websites have, such as restaurant info, a viewable menu, means to contact the restaurant and ordering and order tracking. 
+The idea was to have various features that real life restaurant websites have, such as restaurant info, a viewable menu, means to contact the restaurant ordering and order tracking, as well as personalized account creation to view past orders. 
 
 The code was written in vanilla HTML, PHP and JavaScript.
